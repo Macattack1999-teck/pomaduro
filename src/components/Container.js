@@ -1,4 +1,5 @@
 import React from 'react'
+import ClockContainer from './ClockContainer'
 
 export default () => {
   return (
@@ -18,8 +19,10 @@ export default () => {
         Pomaduro
       </div>
 
-      <div>
-        some component
+      <div style={{
+        width: "100%"
+      }}>
+        <ClockContainer />
       </div>
 
       <div style={{
