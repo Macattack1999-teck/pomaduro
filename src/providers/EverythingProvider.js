@@ -6,6 +6,8 @@ export default (props) => {
   const [sessionLength, setSessionLength] = useState(25);
   const [breakLength, setBreakLength] = useState(5);
   const [paused, setPaused] = useState(true);
+  const [minutes, setMinutes] = useState(25)
+  const [seconds, setSeconds] = useState(0);
 
   const state = {
     onBreak,
@@ -15,7 +17,9 @@ export default (props) => {
     breakLength,
     setBreakLength,
     paused,
-    setPaused
+    setPaused,
+    minutes,
+    seconds
   }
 
   return (
