@@ -13,7 +13,9 @@ export default (props) => {
     sessionLength,
     setSessionLength,
     breakLength,
-    setBreakLength
+    setBreakLength,
+    paused,
+    setPaused
   }
 
   return (

@@ -3,13 +3,18 @@ import EverythingContext from '../contexts/EverythingContext'
 
 export default () => {
   const {
-    paused
+    paused,
+    setPaused
   } = useContext(EverythingContext)
+
+  const handleChangingState = () => {
+    setPaused(!paused)
+  }
 
   return (
     <div style={{ display: "flex", width: "30%", justifyContent: "space-evenly" }}>
-      <div>
-        {!paused ? "Play" : "Pause"}
+      <div onClick={handleChangingState}>
+        {paused ? "Play" : "Pause"}
       </div>
 
       <div>
