@@ -8,7 +8,7 @@ export default () => {
         height: "100%",
         minHeight: "100vh",
         width: "100%",
-        background: "#185687",
+        background: "#fff",
         display: "flex",
         flexDirection: "column",
         alignItems: "center",
