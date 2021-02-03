@@ -8,6 +8,7 @@ export default (props) => {
   const [paused, setPaused] = useState(true);
   const [minutes, setMinutes] = useState(25)
   const [seconds, setSeconds] = useState(0);
+  const [started, setStarted] = useState(false);
 
   const state = {
     onBreak,
