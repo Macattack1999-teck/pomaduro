@@ -9,7 +9,9 @@ export default () => {
       width: "100%",
       display: "flex",
       flexDirection: "column",
-      alignItems: "center"
+      alignItems: "center",
+      height: "60vh",
+      justifyContent: "space-evenly"
     }}>
       <SessionContainer />
 

@@ -3,7 +3,7 @@ import React from 'react'
 export default () => {
   return (
     <div style={{
-      height: "40vh",
+      height: "30vh",
       background: "#f8f8f8",
       width: "30%",
       borderRadius: "20px",
