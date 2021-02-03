@@ -3,7 +3,9 @@ import EverythingContext from '../contexts/EverythingContext'
 
 export default () => {
   const {
-    onBreak
+    onBreak,
+    minutes,
+    seconds
   } = useContext(EverythingContext);
 
   return (
@@ -25,8 +27,12 @@ export default () => {
         }
       </div>
 
-     <div>
-       timer
+     <div style={{
+       display: "flex"
+     }}>
+      <div>{minutes}</div>
+      <div>:</div>
+      <div>{seconds < 10 ? "0" + seconds : seconds}</div>
      </div>
     </div>
   )
