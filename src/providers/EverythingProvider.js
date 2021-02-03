@@ -5,6 +5,7 @@ export default (props) => {
   const [onBreak, setOnBreak] = useState(false);
   const [sessionLength, setSessionLength] = useState(25);
   const [breakLength, setBreakLength] = useState(5);
+  const [paused, setPaused] = useState(true);
 
   const state = {
     onBreak,
