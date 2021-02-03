@@ -1,6 +1,11 @@
-import React from 'react'
+import React, { useContext } from 'react'
+import EverythingContext from '../contexts/EverythingContext'
 
 export default () => {
+  const {
+    onBreak
+  } = useContext(EverythingContext);
+
   return (
     <div style={{
       height: "30vh",
@@ -15,7 +20,9 @@ export default () => {
       justifyContent: "space-evenly"
     }}>
       <div>
-        session or break state
+        {
+          onBreak ? "Break" : "Session"
+        }
       </div>
 
      <div>
