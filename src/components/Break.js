@@ -18,7 +18,7 @@ export default () => {
         alignItems: "center"
       }}>
         <div>
-          Up
+          -
         </div>
 
         <div>
@@ -26,7 +26,7 @@ export default () => {
         </div>
 
         <div>
-          Down
+          +
         </div>
       </div>
     </div>
