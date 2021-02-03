@@ -3,8 +3,21 @@ import EverythingContext from '../contexts/EverythingContext'
 
 export default () => {
   const {
-    sessionLength
+    sessionLength,
+    setSessionLength
   } = useContext(EverythingContext);
+
+  const handleUpdatingSessionLength = (btn) => {
+    if (btn === '-') {
+      if (sessionLength > 1) {
+        setSessionLength(sessionLength - 1)
+      }
+    } else {
+      if (sessionLength < 60) {
+        setSessionLength(sessionLength + 1)
+      }
+    }
+  }
 
   return (
     <div>
@@ -17,7 +30,7 @@ export default () => {
         justifyContent: "space-evenly",
         alignItems: "center"
       }}>
-        <div>
+        <div onClick={() => handleUpdatingSessionLength('-')}>
           -
         </div>
 
@@ -25,7 +38,7 @@ export default () => {
           {sessionLength}
         </div>
 
-        <div>
+        <div onClick={() => handleUpdatingSessionLength('+')}>
           +
         </div>
       </div>
